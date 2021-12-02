@@ -29,7 +29,7 @@ public class AppUtils {
 
     public static String generateRandomShortCode(){
         int randomNum = generateRandomInteger();
-        return Base64Converter.convertIntToBase64(randomNum);
+        return convertIntToBase64(randomNum);
     }
 
     private static String convertIntToBase64(int num) {
