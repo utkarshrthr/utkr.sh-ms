@@ -19,11 +19,6 @@ public class LinkGenerationServiceImpl implements LinkGenerationService {
     private LinkGenerationDAO linkGenerationDAO;
 
     @Override
-    public LinkGenerationResponse generateCustomLink(String url, String code) {
-        return null;
-    }
-
-    @Override
     public LinkGenerationResponse generateLink(LinkGenerationRequest request) {
         LinkGenerationResponse response = new LinkGenerationResponse();
         if(request.getCode() == null){
