@@ -1,14 +1,13 @@
 package app.utk.main.response;
 
-import java.time.LocalDateTime;
-
 /**
  * @author UtkarshRathore on 22-11-2021
  **/
 public class LinkGenerationResponse {
 
     private String code;
-    private String link;
+    private String originalLink;
+    private String shortLink;
 
     public String getCode() {
         return code;
@@ -18,17 +17,25 @@ public class LinkGenerationResponse {
         this.code = code;
     }
 
-    public String getLink() {
-        return link;
+    public String getOriginalLink() {
+        return originalLink;
     }
 
-    public void setLink(String link) {
-        this.link = link;
+    public void setOriginalLink(String originalLink) {
+        this.originalLink = originalLink;
+    }
+
+    public String getShortLink() {
+        return shortLink;
+    }
+
+    public void setShortLink(String shortLink) {
+        this.shortLink = shortLink;
     }
 
     public LinkGenerationResponse(String code, String link) {
         this.code = code;
-        this.link = link;
+        this.originalLink = link;
     }
 
     public LinkGenerationResponse(){
